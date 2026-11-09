@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOYALS SALON • Bespoke Hair Studio & Care Lab</title>
+  <meta name="description" content="A modern, luxurious hair studio dedicated to tailored balayage, molecular keratin repair, and mindful scalp Services. Welcome to Goyals Salon." />
+  <meta name="theme-color" content="#FAF7F2" />
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Playfair Display, Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF7F2',
+            linen: '#F5EFEB',
+            sand: '#EAE3D9',
+            sandBorder: '#E2D8CC',
+            terracotta: '#9B3E32',
+            terracottaLight: '#F4E8E5',
+            gold: '#C59B6D',
+            goldLight: '#F7F1E7',
+            espresso: '#181514',
+            espressoCard: '#221D1C',
+            mutedBrown: '#6B635E',
+            mutedLight: '#9B948E'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            script: ['Alex Brush', 'cursive'],
+            accent: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[#FAF7F2] text-[#181514] font-sans antialiased selection:bg-[#C59B6D]/30 selection:text-[#181514]">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-[#181514] text-[#FAF7F2] text-xs py-2.5 px-4 text-center tracking-wider font-light flex items-center justify-center gap-3 border-b border-white/10">
+    <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#C59B6D] animate-ping"></span>
+    <span>✦ Proudly Open in Kalyan • Welcome to Goyals Salon ✦</span>
+    <a href="#booking" class="underline underline-offset-4 hover:text-[#C59B6D] transition-colors ml-2 font-medium">Reserve Slot</a>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header id="main-navbar" class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex flex-col group">
+        <span class="font-serif text-3xl sm:text-4xl tracking-[0.16em] font-light uppercase text-[#181514] group-hover:text-[#9B3E32] transition-colors">
+          GOYALS 
+          <!-- <span class="text-[#9B3E32] text-2xl font-serif">.</span> -->
+        </span>
+        <!-- <span class="text-[9px] uppercase tracking-[0.25em] text-[#6B635E] font-medium -mt-1 font-sans text-center">
+          Salon
+        </span> -->
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-[#6B635E]">
+        <a href="#about" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">About</a>
+        <!-- <a href="#shades" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">Shade Studio</a> -->
+        <a href="#services" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">Services &amp; Menu</a>
+        <!-- <a href="#products" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">Care Essentials</a> -->
+        <a href="#lookbook" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">Lookbook</a>
+        <a href="#reviews" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">Reviews</a>
+        <a href="#faq" class="hover:text-[#181514] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#181514] hover:after:w-full after:transition-all">FAQ</a>
+      </nav>
+
+      <!-- Right CTAs & Bag Drawer Trigger -->
+      <div class="flex items-center space-x-4">
+        <!-- Shopping Bag Trigger -->
+        <!-- <button class="open-bag-btn relative p-2 text-[#181514] hover:text-[#9B3E32] transition-colors focus:outline-none" aria-label="Shopping Bag">
+          <svg class="w-6 h-6 stroke-[1.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span id="bag-badge" class="absolute -top-1 -right-1 bg-[#9B3E32] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+        </button> -->
+
+        <!-- Primary Appointment CTA -->
+        <a href="#booking" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#181514] text-[#FAF7F2] text-xs font-semibold uppercase tracking-widest hover:bg-[#9B3E32] transition-all duration-300 shadow-sm hover:shadow-md btn-luxury">
+          <span>Book Appointment</span>
+          <svg class="w-3.5 h-3.5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-toggle" class="md:hidden p-2 text-[#181514] hover:text-[#9B3E32] transition-colors focus:outline-none" aria-label="Open Navigation Menu">
+          <svg class="w-6 h-6 stroke-[1.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-8 pb-20 md:pt-16 md:pb-28 overflow-hidden bg-gradient-to-b from-[#FAF7F2] via-[#F7F2EC] to-[#FAF7F2]">
+    <!-- Ambient Warm Glow Background -->
+    <div class="glow-ambient top-0 left-1/2 -translate-x-1/2 opacity-70"></div>
+    
+    <!-- Large Subtle Watermark Behind Hero -->
+    <div class="watermark-text absolute top-12 left-1/2 -translate-x-1/2 text-[18vw] font-serif font-bold text-center tracking-[0.25em] z-0 pointer-events-none select-none">
+      GOYALS
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Tagline & Rating Pill -->
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/70 border border-[#E2D8CC] text-xs font-medium text-[#6B635E] backdrop-blur-sm shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-[#C59B6D]"></span>
+          <span>Level Up your Salon experience</span>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-[#6B635E]">
+          <div class="flex text-[#C59B6D]">
+            ★★★★★
+          </div>
+          <span class="font-medium text-[#181514]">4.95 / 5.0</span>
+          <span class="text-[#9B948E]">• 1,840+ bespoke transformations</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-6 space-y-6 text-left reveal">
+          <div class="space-y-2">
+            <h2 class="text-sm uppercase tracking-[0.25em] font-semibold text-[#9B3E32] font-sans">
+              Bespoke Haircare &amp; Salon Experience
+            </h2>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-light text-[#181514] leading-[1.08] tracking-tight">
+              A place that cares <br />
+              <span class="font-script text-5xl sm:text-6xl lg:text-7xl text-[#9B3E32] lowercase font-normal inline-block transform -rotate-1 pr-2">
+                about
+              </span>
+              <span class="italic font-normal text-[#181514]">your hair.</span>
+            </h1>
+          </div>
+
+          <p class="text-base sm:text-lg text-[#6B635E] font-light leading-relaxed max-w-xl">
+            Experience transformative hair Services, precision sculpture styling, and mindful botanical therapies calibrated to your hair’s unique molecular profile. Where French artistry meets clean clinical care.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#booking" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#181514] text-[#FAF7F2] text-xs font-semibold uppercase tracking-widest hover:bg-[#9B3E32] transition-all duration-300 shadow-md hover:shadow-xl btn-luxury">
+              <span>Book An Appointment</span>
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="#services" class="inline-flex items-center justify-center px-7 py-4 rounded-full bg-white/80 border border-[#E2D8CC] text-[#181514] text-xs font-semibold uppercase tracking-widest hover:bg-[#FAF7F2] hover:border-[#181514] transition-all duration-300 backdrop-blur-sm">
+              <span>Explore Menu</span>
+              <svg class="w-4 h-4 ml-2 text-[#C59B6D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Avatars -->
+          <!-- <div class="pt-6 border-t border-[#E2D8CC]/70 flex flex-wrap items-center gap-6">
+            <div class="flex -space-x-3">
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#FAF7F2] object-cover" src="assets/images/client-1.jpg" alt="Client 1" />
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#FAF7F2] object-cover" src="assets/images/client-2.jpg" alt="Client 2" />
+              <img class="inline-block h-10 w-10 rounded-full ring-2 ring-[#FAF7F2] object-cover" src="assets/images/client-3.jpg" alt="Client 3" />
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-[#181514]">Voted Best Hair Studio 2025 &amp; 2026</div>
+              <div class="text-[11px] text-[#6B635E]">SoHo NYC • Mayfair London • Le Marais Paris</div>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Right Hero Visual Asset (Key Model from Reference Board) -->
+        <div class="lg:col-span-6 relative flex justify-center items-center reveal reveal-delay-1">
+          
+          <!-- Outer Decorative Arched Frame -->
+          <div class="relative w-full max-w-md sm:max-w-lg">
+            
+            <!-- Background Halo Accent -->
+            <div class="absolute -inset-3 rounded-t-[190px] rounded-b-[40px] bg-gradient-to-tr from-[#C59B6D]/20 via-[#FAF7F2]/40 to-[#9B3E32]/15 blur-lg"></div>
+            
+            <!-- Main Arched Hero Image Container -->
+            <div class="relative rounded-t-[180px] rounded-b-[36px] overflow-hidden border border-[#E2D8CC] shadow-2xl bg-[#EAE3D9] img-zoom-container aspect-[3/4] sm:aspect-[4/5]">
+              <img 
+                src="assets/images/hero-model2.jpg" 
+                alt="Goyals Salon Luxury Blonde Model" 
+                class="w-full h-full object-cover object-top img-zoom"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#181514]/40 via-transparent to-transparent pointer-events-none"></div>
+
+              <!-- Overlay Bottom Tagline on Image -->
+              <div class="absolute bottom-5 left-6 right-6 text-white text-left">
+                <span class="text-[10px] uppercase tracking-[0.25em] text-[#C59B6D] font-semibold">Signature Service</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-light text-white">Luminous French Balayage</h3>
+              </div>
+            </div>
+
+            <!-- Floating Glass Card 1 (Top Right): Rating Badge -->
+            <div class="md:hidden block absolute -top-4 -right-2 sm:-right-6 glass-panel px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 animate-float-1 z-20">
+              <div class="w-9 h-9 rounded-full bg-[#181514] text-[#C59B6D] flex items-center justify-center font-serif text-base font-bold">
+                ★
+              </div>
+              <div class="text-left">
+                <div class="text-xs font-bold text-[#181514]">4.9 / 5.0 Rating</div>
+                <div class="text-[10px] text-[#6B635E]">Master Colorists &amp; Stylists</div>
+              </div>
+            </div>
+
+            <!-- Floating Glass Card 2 (Bottom Left): Clean Botanical Badge -->
+            <div class="absolute -bottom-6 -left-2 sm:-left-6 glass-panel px-4 py-3.5 rounded-2xl shadow-xl flex items-center gap-3 animate-float-2 z-20">
+              <div class="w-9 h-9 rounded-full bg-[#9B3E32]/10 text-[#9B3E32] flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <div class="text-left">
+                <div class="text-xs font-bold text-[#181514]">100% Bio-Active Care</div>
+                <div class="text-[10px] text-[#6B635E]">Formaldehyde &amp; Paraben Free</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Goyals Salon / Brand Ethos Section -->
+  <section id="about" class="py-20 md:py-32 relative bg-[#F5EFEB] border-t border-b border-[#E2D8CC]/80 overflow-hidden">
+    <!-- Giant Watermark Typography -->
+    <div class="watermark-text absolute top-8 right-0 text-[14vw] font-serif font-light text-right leading-none z-0">
+      ABOUT GOYALS
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+     <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-left reveal">
+          <div class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">
+            <span>Our Philosophy</span>
+            <span class="w-8 h-[1px] bg-[#9B3E32]"></span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514] leading-tight">
+            Your hair, your skin, your vibe. <br />
+            <span class="italic font-normal">Expertly styled, effortlessly you.</span>
+          </h2>
+
+          <p class="text-base sm:text-lg text-[#6B635E] font-light leading-relaxed">
+            At Goyals Salon, self-care is simple, welcoming, and made for everyday life. Whether you’re dropping by for a fresh cut, a custom color update, or a glowing facial, we keep things relaxed, modern, and tailored entirely to you.
+          </p>
+
+          <p class="text-sm sm:text-base text-[#6B635E] font-light leading-relaxed">
+            From everyday styling to total relaxation, our unisex space is designed for everyone looking to refresh their look, unwind, and enjoy effortless self-care without the fuss.
+          </p>
+
+          <!-- 3 Value Columns -->
+          <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+            <div class="p-5 rounded-2xl bg-white/70 border border-[#E2D8CC] shadow-xs">
+              <span class="text-lg font-serif font-bold text-[#9B3E32]">01</span>
+              <h4 class="font-serif text-base font-semibold text-[#181514] mt-1">Spotless Hygiene</h4>
+              <p class="text-xs text-[#6B635E] mt-1 leading-normal">Hospital-grade sterilised tools, fresh towels and a sanitised station for every guest, every time.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white/70 border border-[#E2D8CC] shadow-xs">
+              <span class="text-lg font-serif font-bold text-[#9B3E32]">02</span>
+              <h4 class="font-serif text-base font-semibold text-[#181514] mt-1">Genuine Products</h4>
+              <p class="text-xs text-[#6B635E] mt-1 leading-normal">Only authentic, professional-grade brands, sealed and opened in front of you. No dilution, no fakes.</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-white/70 border border-[#E2D8CC] shadow-xs">
+              <span class="text-lg font-serif font-bold text-[#9B3E32]">03</span>
+              <h4 class="font-serif text-base font-semibold text-[#181514] mt-1">Honest Care</h4>
+              <p class="text-xs text-[#6B635E] mt-1 leading-normal">Clear pricing, transparent advice and friendly service, so you always know you’re in good hands.</p>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Right Visual Collage -->
+        <div class="lg:col-span-5 relative reveal reveal-delay-2">
+          <div class="relative mx-auto max-w-sm sm:max-w-md">
+            <!-- Salon Environment Photo -->
+            <div class="rounded-3xl overflow-hidden border border-[#E2D8CC] shadow-xl aspect-[4/5] img-zoom-container">
+              <img src="assets/images/about-salon2.jpg" alt="Goyals Salon Interior Aesthetics" class="w-full h-full object-cover img-zoom" />
+            </div>
+
+            <!-- Overlapping Detail Photo -->
+            <div class="absolute -bottom-8 -left-6 sm:-left-10 w-44 sm:w-52 rounded-2xl overflow-hidden border-4 border-[#FAF7F2] shadow-2xl aspect-square img-zoom-container">
+              <img src="assets/images/about-detail.jpg" alt="Botanical Treatment Service" class="w-full h-full object-cover img-zoom" />
+            </div>
+
+            <!-- Floating Stat Card -->
+            <div class="absolute top-6 -right-4 glass-panel p-4 rounded-2xl shadow-lg text-left">
+              <div class="text-2xl font-serif font-bold text-[#181514]">98.7%</div>
+              <div class="text-[11px] text-[#6B635E] uppercase tracking-wider font-medium">Client Rebooking Rate</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Numerical Stats Counter Row -->
+      <div class="mt-20 pt-10 border-t border-[#E2D8CC] grid grid-cols-2 md:grid-cols-4 gap-8 text-center reveal">
+        <div class="space-y-1">
+          <div class="font-serif text-4xl sm:text-5xl font-light text-[#181514]">12+</div>
+          <div class="text-xs uppercase tracking-widest text-[#6B635E] font-medium">Master Stylists &amp; Colorists</div>
+        </div>
+        <div class="space-y-1">
+          <div class="font-serif text-4xl sm:text-5xl font-light text-[#181514]">15K+</div>
+          <div class="text-xs uppercase tracking-widest text-[#6B635E] font-medium">Hair Transformations</div>
+        </div>
+        <div class="space-y-1">
+          <div class="font-serif text-4xl sm:text-5xl font-light text-[#181514]">100%</div>
+          <div class="text-xs uppercase tracking-widest text-[#6B635E] font-medium">Clean &amp; Vegan Formulas</div>
+        </div>
+        <div class="space-y-1">
+          <div class="font-serif text-4xl sm:text-5xl font-light text-[#181514]">24</div>
+          <div class="text-xs uppercase tracking-widest text-[#6B635E] font-medium">International Salon Awards</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hair Shade Studio & Color Lab (Replicating Concept 01) -->
+ 
+
+  <!-- Features & Signature Services Section -->
+  <section id="services" class="py-20 md:py-32 bg-[#F5EFEB] border-t border-b border-[#E2D8CC]/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
+        <div class="max-w-xl text-left space-y-2">
+          <div class="text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">Services &amp; Experiences</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514]">
+            Signature Studio Treatments
+          </h2>
+          <p class="text-sm sm:text-base text-[#6B635E] font-light">
+            Every appointment includes a private consultation, tailored botanical wash, scalp massage, and bespoke signature blowout.
+          </p>
+        </div>
+
+        <!-- Filter Categories -->
+        <div class="flex flex-wrap gap-2">
+          <button class="service-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-[#181514] text-white border border-[#181514]" data-category="all">
+            All Services
+          </button>
+          <button class="service-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-[#FAF7F2] text-[#6B635E] border border-[#E2D8CC] hover:border-[#181514]" data-category="color">
+            Color &amp; Balayage
+          </button>
+          <button class="service-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-[#FAF7F2] text-[#6B635E] border border-[#E2D8CC] hover:border-[#181514]" data-category="repair">
+            Keratin &amp; Repair
+          </button>
+          <button class="service-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-[#FAF7F2] text-[#6B635E] border border-[#E2D8CC] hover:border-[#181514]" data-category="cut">
+            Sculpture Cuts
+          </button>
+          <button class="service-filter-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all bg-[#FAF7F2] text-[#6B635E] border border-[#E2D8CC] hover:border-[#181514]" data-category="spa">
+            Scalp Spa
+          </button>
+        </div>
+      </div>
+
+      <!-- Services Grid: 6 Distinct Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+        
+        <!-- Service 1: French Balayage -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="color">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/service-balayage.jpg" alt="French Balayage & Gloss" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#181514]">
+                Signature Favorite
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $280
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 180 mins</span>
+                <span>Includes Bond Shield</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">French Balayage &amp; Acidic Gloss</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Freehand hand-painted lightness creating soft depth, followed by an acidic conditioning glaze to close cuticles and reflect mirror light.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="French Balayage & Acidic Gloss">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Silk Keratin Repair -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="repair">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/service-keratin.jpg" alt="Silk Keratin Molecular Repair" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#9B3E32]">
+                Zero Formaldehyde
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $320
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 150 mins</span>
+                <span>Lasts 4–5 Months</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">Silk Keratin Molecular Repair</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Patented biomimetic peptide infusion that restores broken disulphide bridges, eliminates frizz, and seals healthy satin elasticity.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="Silk Keratin Molecular Repair">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Precision Sculpture Cut -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="cut">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/service-cut.jpg" alt="Precision Sculpture Cut" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#181514]">
+                Architectural
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $140
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 60 mins</span>
+                <span>Includes Sculpt Blowout</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">Precision Sculpture Cut &amp; Blowout</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Dual wet &amp; dry scissor technique adapted to bone structure, hair fall patterns, and daily styling preferences for effortless movement.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="Precision Sculpture Cut & Blowout">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Botanical Scalp Detox Spa -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="spa">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/service-scalp.jpg" alt="Botanical Scalp Detox Hydro-Spa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#C59B6D]">
+                Head-Spa Service
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $195
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 75 mins</span>
+                <span>Includes Scalp Mapping</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">Botanical Scalp Detox Hydro-Spa</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Japanese hydro-circulation basin, lactic acid exfoliation, herbal steam therapy, and shiatsu cranial massage to promote follicle regeneration.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="Botanical Scalp Detox Hydro-Spa">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: Platinum Lightening & Bond Defense -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="color">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/lookbook-2.jpg" alt="Platinum Lightening & Bond Defense" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#181514]">
+                Clean Blonde
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $380
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 210 mins</span>
+                <span>Triple Conditioning</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">Platinum Lightening &amp; Bond Shield</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Pure ice or pearl blonde transformation with zero warm banding, enriched with continuous peptide shield infusions to prevent breakage.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="Platinum Lightening & Bond Shield">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Editorial Runway & Event Styling -->
+        <div class="service-card-item rounded-3xl bg-white border border-[#E2D8CC] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="cut">
+          <div>
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="assets/images/lookbook-3.jpg" alt="Editorial Runway & Event Styling" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#181514]">
+                Special Occasion
+              </div>
+              <div class="absolute bottom-4 right-4 bg-[#181514] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                From $175
+              </div>
+            </div>
+            <div class="p-6 text-left space-y-3">
+              <div class="flex items-center justify-between text-xs text-[#6B635E]">
+                <span>Duration: 90 mins</span>
+                <span>Long-Wear Setting</span>
+              </div>
+              <h3 class="font-serif text-2xl font-medium text-[#181514]">Editorial Runway &amp; Bridal Styling</h3>
+              <p class="text-xs text-[#6B635E] leading-relaxed">
+                Sculpted Hollywood waves, modern French twists, or ethereal textured chignons crafted for red-carpet longevity and movement.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <button class="book-service-trigger w-full py-3 rounded-full border border-[#181514] text-xs font-semibold uppercase tracking-wider hover:bg-[#181514] hover:text-white transition-colors" data-service-name="Editorial Runway & Bridal Styling">
+              Reserve This Service
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Curated Haircare Products Shelf (Replicating Concept 02 & Product Showcase) -->
+
+
+  <!-- Lookbook & Editorial Transformations Gallery -->
+  <section id="lookbook" class="py-20 md:py-32 bg-[#F5EFEB] border-t border-b border-[#E2D8CC]/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
+        <div class="text-left space-y-2">
+          <div class="text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">The Lookbook</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514]">
+            Recent Transformations
+          </h2>
+          <p class="text-sm sm:text-base text-[#6B635E] font-light max-w-lg">
+            Real clients, unfiltered studio captures. Explore our latest balayage dimensions, corrective color results, and runway-inspired styling.
+          </p>
+        </div>
+        <div class="text-right">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#181514] hover:text-[#9B3E32]">
+            <span>Follow @GoyalsSalon</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4-Column Lookbook Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        
+        <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] border border-[#E2D8CC] shadow-sm">
+          <img src="assets/images/lookbook-1.jpg" alt="Look 01 Sunlit Dimensional Balayage" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#181514]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+            <span class="text-[10px] uppercase tracking-widest text-[#C59B6D] font-bold">Look 01</span>
+            <h4 class="font-serif text-lg">Sunlit Dimensional Balayage</h4>
+            <p class="text-xs text-white/80 mt-1">Formula: 9.32 Champagne Toner with bond repair</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] border border-[#E2D8CC] shadow-sm">
+          <img src="assets/images/lookbook-2.jpg" alt="Look 02 Nordic Pearl Blonde" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#181514]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+            <span class="text-[10px] uppercase tracking-widest text-[#C59B6D] font-bold">Look 02</span>
+            <h4 class="font-serif text-lg">Nordic Pearl Blonde</h4>
+            <p class="text-xs text-white/80 mt-1">Formula: Full foil micro-weave &amp; violet acidic rinse</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] border border-[#E2D8CC] shadow-sm">
+          <img src="assets/images/lookbook-3.jpg" alt="Look 03 Editorial French Waves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#181514]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+            <span class="text-[10px] uppercase tracking-widest text-[#C59B6D] font-bold">Look 03</span>
+            <h4 class="font-serif text-lg">Editorial French Waves</h4>
+            <p class="text-xs text-white/80 mt-1">Sculpted styling with Thermo-Shield Serum</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-3xl overflow-hidden aspect-[3/4] border border-[#E2D8CC] shadow-sm">
+          <img src="assets/images/lookbook-4.jpg" alt="Look 04 Liquid Gloss Brunette" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#181514]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white text-left">
+            <span class="text-[10px] uppercase tracking-widest text-[#C59B6D] font-bold">Look 04</span>
+            <h4 class="font-serif text-lg">Liquid Gloss Brunette</h4>
+            <p class="text-xs text-white/80 mt-1">Formula: Rich espresso glazed with Marula Elixir</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Social Proof & Client Testimonials Section -->
+  <section id="reviews" class="py-20 md:py-32 bg-[#FAF7F2] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+        <div class="text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">Client Stories</div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514]">
+          Loved By Discerning Clients
+        </h2>
+        <p class="text-sm sm:text-base text-[#6B635E] font-light">
+          From fashion editors to everyday hair enthusiasts, see why over 15,000 clients trust Goyals Salon with their hair health.
+        </p>
+      </div>
+
+      <!-- Testimonial Slider / Carousel Container -->
+      <div class="relative max-w-4xl mx-auto overflow-hidden reveal">
+        
+        <div id="testimonials-track" class="slider-track">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide w-full flex-shrink-0 px-4">
+            <div class="p-8 sm:p-12 rounded-3xl bg-white border border-[#E2D8CC] shadow-sm text-center space-y-6">
+              <div class="text-[#C59B6D] text-lg">★★★★★</div>
+              <blockquote class="font-serif text-2xl sm:text-3xl font-light text-[#181514] leading-relaxed max-w-2xl mx-auto italic">
+                “The only salon in New York I trust with my blonde. The French Balayage grew out for five months without a single harsh demarcation line, and my hair is softer than before I lightened it.”
+              </blockquote>
+              <div class="flex items-center justify-center gap-4 pt-2">
+                <img src="assets/images/client-1.jpg" alt="Camille Laurent" class="w-12 h-12 rounded-full object-cover ring-2 ring-[#C59B6D]/40" />
+                <div class="text-left">
+                  <h4 class="text-sm font-semibold text-[#181514]">Camille Laurent</h4>
+                  <p class="text-xs text-[#6B635E]">Senior Fashion Editor • French Balayage Client</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide w-full flex-shrink-0 px-4">
+            <div class="p-8 sm:p-12 rounded-3xl bg-white border border-[#E2D8CC] shadow-sm text-center space-y-6">
+              <div class="text-[#C59B6D] text-lg">★★★★★</div>
+              <blockquote class="font-serif text-2xl sm:text-3xl font-light text-[#181514] leading-relaxed max-w-2xl mx-auto italic">
+                “The Japanese head spa scalp Service is complete transcendent bliss. The microscopic camera scan showed my follicles before and after—the difference was astounding. Pure luxury.”
+              </blockquote>
+              <div class="flex items-center justify-center gap-4 pt-2">
+                <img src="assets/images/client-2.jpg" alt="Julian Meyer" class="w-12 h-12 rounded-full object-cover ring-2 ring-[#C59B6D]/40" />
+                <div class="text-left">
+                  <h4 class="text-sm font-semibold text-[#181514]">Julian Meyer</h4>
+                  <p class="text-xs text-[#6B635E]">Architectural Designer • Scalp Spa Regular</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide w-full flex-shrink-0 px-4">
+            <div class="p-8 sm:p-12 rounded-3xl bg-white border border-[#E2D8CC] shadow-sm text-center space-y-6">
+              <div class="text-[#C59B6D] text-lg">★★★★★</div>
+              <blockquote class="font-serif text-2xl sm:text-3xl font-light text-[#181514] leading-relaxed max-w-2xl mx-auto italic">
+                “Goyals Salon’s Molecular Keratin repair changed my life. I have natural tight curls that puffed up constantly in summer humidity; now I blow-dry in 12 minutes and it stays mirror-glossy all week.”
+              </blockquote>
+              <div class="flex items-center justify-center gap-4 pt-2">
+                <img src="assets/images/client-3.jpg" alt="Elena Rostova" class="w-12 h-12 rounded-full object-cover ring-2 ring-[#C59B6D]/40" />
+                <div class="text-left">
+                  <h4 class="text-sm font-semibold text-[#181514]">Elena Rostova</h4>
+                  <p class="text-xs text-[#6B635E]">Creative Director • Keratin &amp; Color Client</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Slider Controls: Prev & Next -->
+        <div class="flex items-center justify-between mt-8 max-w-xs mx-auto">
+          <button id="testi-prev" class="w-10 h-10 rounded-full border border-[#E2D8CC] bg-white flex items-center justify-center text-[#181514] hover:bg-[#181514] hover:text-white transition-colors" aria-label="Previous Testimonial">
+            ←
+          </button>
+          
+          <!-- Dots -->
+          <div class="flex items-center gap-2">
+            <button class="testi-dot w-8 h-2.5 rounded-full bg-[#181514] transition-all" data-slide-to="0" aria-label="Go to slide 1"></button>
+            <button class="testi-dot w-2.5 h-2.5 rounded-full bg-[#E2D8CC] transition-all" data-slide-to="1" aria-label="Go to slide 2"></button>
+            <button class="testi-dot w-2.5 h-2.5 rounded-full bg-[#E2D8CC] transition-all" data-slide-to="2" aria-label="Go to slide 3"></button>
+          </div>
+
+          <button id="testi-next" class="w-10 h-10 rounded-full border border-[#E2D8CC] bg-white flex items-center justify-center text-[#181514] hover:bg-[#181514] hover:text-white transition-colors" aria-label="Next Testimonial">
+            →
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Press & Editorial Recognition -->
+      <div class="mt-20 pt-12 border-t border-[#E2D8CC]/70 reveal">
+        <p class="text-xs uppercase tracking-[0.25em] text-[#6B635E] font-medium text-center mb-8">As Featured In International Press</p>
+        <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+          <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold">VOGUE</span>
+          <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold">ELLE</span>
+          <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold">HARPER'S BAZAAR</span>
+          <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold">ALLURE</span>
+          <span class="font-serif text-2xl sm:text-3xl tracking-widest font-bold">MARIE CLAIRE</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Appointment Booking & Consultation Section -->
+  <section id="booking" class="py-20 md:py-32 bg-[#181514] text-[#FAF7F2] relative overflow-hidden">
+    <!-- Ambient Red / Amber Glow -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 rounded-full bg-[#9B3E32]/20 filter blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-[#C59B6D]/15 filter blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Side: Editorial Pitch & Information -->
+        <div class="lg:col-span-5 text-left space-y-6 reveal">
+          <div class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] font-semibold text-[#C59B6D]">
+            <span>Reservations</span>
+            <span class="w-8 h-[1px] bg-[#C59B6D]"></span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-white leading-tight">
+            Reserve Your Private <br />
+            <span class="italic font-normal text-[#C59B6D]">Hair Sanctuary.</span>
+          </h2>
+
+          <p class="text-sm sm:text-base text-white/70 font-light leading-relaxed">
+            Appointments are intentionally scheduled with extended buffers to ensure an unhurried, private experience. Every session includes a microscopic scalp scan and custom botanical drink.
+          </p>
+
+          <!-- Studio Locations & Hours -->
+          <div class="space-y-4 pt-4 border-t border-white/10 text-xs text-white/80">
+            <div class="flex items-start gap-3">
+              <span class="text-[#C59B6D] text-base">📍</span>
+              <div>
+                <strong class="text-white block font-sans">New York Flagship</strong>
+                <span>482 Broome Street, SoHo, NY 10013</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-[#C59B6D] text-base">⏰</span>
+              <div>
+                <strong class="text-white block font-sans">Salon Hours</strong>
+                <span>Tuesday – Saturday: 9:00 AM – 8:00 PM <br />Sunday: 10:00 AM – 6:00 PM (Monday Closed)</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-[#C59B6D] text-base">📞</span>
+              <div>
+                <strong class="text-white block font-sans">Direct Concierge</strong>
+                <span>+1 (212) 555-0198 • concierge@goyalssalon.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Mobile Device with Goyals Salon App Opened -->
+        <div class="lg:col-span-7 flex justify-center items-center reveal reveal-delay-1 relative py-6">
+          
+          <!-- Outer Ambient Glow Behind Device -->
+          <div class="absolute -inset-4 bg-gradient-to-tr from-[#C59B6D]/20 via-[#9B3E32]/15 to-transparent rounded-full filter blur-3xl pointer-events-none"></div>
+
+          <!-- Floating Badges Outside the Phone -->
+          <div class="hidden sm:flex absolute -top-3 -right-2 glass-panel-dark px-4 py-2.5 rounded-2xl shadow-xl items-center gap-2.5 border border-white/10 z-20 animate-float-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#4E8062] animate-pulse"></span>
+            <div class="text-left">
+              <span class="text-[10px] uppercase tracking-wider text-[#C59B6D] font-bold block">Live On iOS &amp; Android</span>
+              <span class="text-xs text-white/90 font-medium">Goyals Salon Mobile App</span>
+            </div>
+          </div>
+
+          <div class="hidden sm:flex absolute -bottom-5 -left-4 glass-panel-dark px-4 py-3 rounded-2xl shadow-xl items-center gap-3 border border-white/10 z-20 animate-float-2">
+            <div class="w-9 h-9 rounded-full bg-[#C59B6D]/20 text-[#C59B6D] flex items-center justify-center font-bold text-sm">
+              ★
+            </div>
+            <div class="text-left">
+              <span class="text-xs font-bold text-white block">4.98 App Rating</span>
+              <span class="text-[10px] text-white/60">Over 15,000+ Verified Bookings</span>
+            </div>
+          </div>
+
+          <!-- The Phone Frame -->
+          <div class="phone-mockup relative z-10 w-full max-w-[360px]">
+            <!-- Dynamic Island Notch -->
+            <div class="phone-notch"></div>
+
+            <!-- Phone Screen (Goyals Salon App Opened) -->
+            <div class="phone-screen p-5 pt-11 pb-5 space-y-3.5">
+              
+              <!-- iOS Status Bar -->
+              <div class="flex items-center justify-between text-[11px] text-white/70 px-1 pt-1 font-medium">
+                <span>9:41</span>
+                <div class="flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.9-1.9C9.22 19.64 10.56 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+                  <span>5G</span>
+                  <div class="w-5 h-2.5 border border-white/60 rounded-xs p-0.5 flex items-center">
+                    <div class="w-full h-full bg-[#4E8062] rounded-xs"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- App Top Header -->
+              <div class="flex items-center justify-between pt-1 border-b border-white/10 pb-3 text-left">
+                <div>
+                  <span class="text-[9px] uppercase tracking-widest text-[#C59B6D] font-bold block">Goyals Salon App</span>
+                  <h4 class="font-serif text-lg text-white font-medium">Victoria Sterling</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="px-2 py-0.5 rounded-full bg-[#C59B6D]/20 text-[#C59B6D] text-[10px] font-bold border border-[#C59B6D]/30">VIP Tier</span>
+                  <img src="assets/images/client-1.jpg" alt="Victoria" class="w-8 h-8 rounded-full object-cover ring-1 ring-[#C59B6D]" />
+                </div>
+              </div>
+
+              <!-- Quick Confirmation Banner (Hidden by default, triggered on tap) -->
+              <div id="app-confirm-banner" class="hidden p-3 rounded-2xl bg-[#4E8062]/20 border border-[#4E8062]/40 text-left transition-all">
+                <div class="flex items-center gap-2 text-xs text-[#72C895] font-semibold">
+                  <span>✓</span>
+                  <span>Session Confirmed in Goyals App!</span>
+                </div>
+                <p class="text-[11px] text-white/80 mt-0.5">Added to your Apple Calendar &amp; Goyals VIP Pass.</p>
+              </div>
+
+              <!-- Active Appointment Card -->
+              <div class="p-3.5 rounded-2xl bg-[#1C1917] border border-white/10 text-left space-y-2 shadow-md">
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="text-[#C59B6D] font-bold uppercase tracking-wider flex items-center gap-1.5 text-[10px]">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#C59B6D] animate-ping"></span>
+                    Reserved Service
+                  </span>
+                  <span class="text-white/50 text-[10px]">Private Suite 03</span>
+                </div>
+                <div>
+                  <h5 id="app-selected-service" class="font-serif text-base text-white font-medium">French Balayage &amp; Acidic Gloss</h5>
+                  <p class="text-[11px] text-white/60">Elena Laurent • Senior Color Director</p>
+                </div>
+                <div class="pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-white/80">
+                  <div class="flex items-center gap-1.5">
+                    <span>🗓️</span>
+                    <span>Thu, Nov 12</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 font-medium text-[#C59B6D]">
+                    <span>⏰</span>
+                    <span id="app-selected-time">10:30 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hair Health Diagnostic Pill in App -->
+              <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between text-left text-xs">
+                <div>
+                  <div class="text-[9px] text-white/50 uppercase tracking-wider">Scalp Diagnostic</div>
+                  <div class="font-medium text-white text-[11px] mt-0.5">Cuticle Density: 94% Restored</div>
+                </div>
+                <span class="text-[10px] text-[#72C895] font-bold bg-[#72C895]/15 px-2 py-0.5 rounded-md">Optimal</span>
+              </div>
+
+              <!-- Interactive Service Selection Chips inside Phone -->
+              <div class="text-left space-y-1.5">
+                <div class="text-[10px] uppercase tracking-wider text-white/50 font-semibold">Choose Service in App:</div>
+                <div class="grid grid-cols-2 gap-1.5 text-xs">
+                  <button class="app-service-chip px-2.5 py-1.5 rounded-xl border border-[#C59B6D] text-[#C59B6D] bg-[#C59B6D]/15 text-left text-[10px] font-medium truncate transition-colors" data-service="French Balayage & Acidic Gloss">
+                    ✦ French Balayage
+                  </button>
+                  <button class="app-service-chip px-2.5 py-1.5 rounded-xl border border-white/10 text-white/60 text-left text-[10px] font-medium truncate hover:border-[#C59B6D] transition-colors" data-service="Goyals Keratin Molecular Repair">
+                    ✦ Keratin Repair
+                  </button>
+                  <button class="app-service-chip px-2.5 py-1.5 rounded-xl border border-white/10 text-white/60 text-left text-[10px] font-medium truncate hover:border-[#C59B6D] transition-colors" data-service="Precision Sculpture Cut">
+                    ✦ Sculpture Cut
+                  </button>
+                  <button class="app-service-chip px-2.5 py-1.5 rounded-xl border border-white/10 text-white/60 text-left text-[10px] font-medium truncate hover:border-[#C59B6D] transition-colors" data-service="Botanical Scalp Detox Spa">
+                    ✦ Scalp Spa
+                  </button>
+                </div>
+              </div>
+
+              <!-- Available Time Slots inside Phone -->
+              <div class="text-left space-y-1.5">
+                <div class="text-[10px] uppercase tracking-wider text-white/50 font-semibold">Select Time Slot:</div>
+                <div class="flex items-center gap-1.5">
+                  <button class="app-slot-btn flex-1 py-1 rounded-lg bg-[#C59B6D] text-[#181514] font-bold text-[10px] transition-all" data-time="10:30 AM">10:30 AM</button>
+                  <button class="app-slot-btn flex-1 py-1 rounded-lg bg-white/10 text-white/80 text-[10px] hover:bg-white/20 transition-all" data-time="1:00 PM">1:00 PM</button>
+                  <button class="app-slot-btn flex-1 py-1 rounded-lg bg-white/10 text-white/80 text-[10px] hover:bg-white/20 transition-all" data-time="3:30 PM">3:30 PM</button>
+                  <button class="app-slot-btn flex-1 py-1 rounded-lg bg-white/10 text-white/80 text-[10px] hover:bg-white/20 transition-all" data-time="5:30 PM">5:30 PM</button>
+                </div>
+              </div>
+
+              <!-- CTA Inside Phone -->
+              <button id="app-confirm-booking-btn" class="w-full py-3 rounded-xl bg-[#C59B6D] text-[#181514] text-xs font-bold uppercase tracking-wider hover:bg-[#d6af83] transition-all shadow-md">
+                Reserve in Goyals App
+              </button>
+
+              <!-- App Bottom Navigation Tabs -->
+              <div class="pt-2 border-t border-white/10 flex items-center justify-around text-center text-[9px] text-white/40">
+                <div class="hover:text-white cursor-pointer">
+                  <div>🏠</div>
+                  <span>Home</span>
+                </div>
+                <div class="text-[#C59B6D] font-bold cursor-pointer">
+                  <div>📅</div>
+                  <span>Bookings</span>
+                </div>
+                <div class="hover:text-white cursor-pointer">
+                  <div>🧴</div>
+                  <span>Care Line</span>
+                </div>
+                <div class="hover:text-white cursor-pointer">
+                  <div>👤</div>
+                  <span>Profile</span>
+                </div>
+              </div>
+
+              <!-- iOS Home Indicator -->
+              <div class="w-28 h-1 bg-white/30 rounded-full mx-auto mt-1"></div>
+
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 md:py-28 bg-[#FAF7F2]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-3 reveal">
+        <div class="text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">Questions &amp; Clarity</div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514]">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4 reveal">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-[#E2D8CC] overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+            <span class="font-serif text-lg sm:text-xl font-medium text-[#181514]">How does French Balayage differ from traditional foil highlights?</span>
+            <span class="accordion-icon text-xl text-[#9B3E32] ml-4 font-serif">↓</span>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-xs sm:text-sm text-[#6B635E] leading-relaxed">
+            Traditional foil highlights work from the scalp in symmetrical striped rows, often leaving an obvious harsh line of demarcation as your hair grows out. French Balayage is an artisanal, freehand sweeping method where lightness is customized to your haircut and natural movement. It grows out with zero harsh demarcation line, allowing 4 to 6 months between salon visits.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-[#E2D8CC] overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+            <span class="font-serif text-lg sm:text-xl font-medium text-[#181514]">Is the Goyals Keratin treatment free from harsh chemicals and formaldehyde?</span>
+            <span class="accordion-icon text-xl text-[#9B3E32] ml-4 font-serif">↓</span>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-xs sm:text-sm text-[#6B635E] leading-relaxed">
+            Yes, 100%. Our Goyals Keratin formula is strictly formaldehyde-free, paraben-free, and cruelty-free. It uses plant-based glyoxylic amino acids and biomimetic silk peptides to re-align hydrogen bonds without emitting toxic fumes or damaging internal hair structure.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-[#E2D8CC] overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+            <span class="font-serif text-lg sm:text-xl font-medium text-[#181514]">What happens during the complimentary scalp analysis?</span>
+            <span class="accordion-icon text-xl text-[#9B3E32] ml-4 font-serif">↓</span>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-xs sm:text-sm text-[#6B635E] leading-relaxed">
+            Using a high-resolution 200x trichological microscopic camera, we evaluate your scalp’s sebum balance, follicular density, and cuticle erosion. This scientific assessment lets us mix a personalized acidic formulation to repair porosity and address sensitivity.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-accordion-item rounded-2xl bg-white border border-[#E2D8CC] overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" aria-expanded="false">
+            <span class="font-serif text-lg sm:text-xl font-medium text-[#181514]">What is your rescheduling and cancellation policy?</span>
+            <span class="accordion-icon text-xl text-[#9B3E32] ml-4 font-serif">↓</span>
+          </button>
+          <div class="accordion-content px-6 pb-6 text-xs sm:text-sm text-[#6B635E] leading-relaxed">
+            Because our artists dedicate extended one-on-one time to each client, we kindly ask for at least 48 hours notice for any cancellations or date changes. Notice provided within 48 hours allows us to offer the reserved private suite to guests on our priority waitlist.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Luxury Editorial Footer -->
+  <footer id="footer" class="bg-[#141211] text-[#FAF7F2] pt-20 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Footer: Newsletter Subscription -->
+      <div class="pb-16 border-b border-white/10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-6 text-left space-y-2">
+          <span class="text-xs uppercase tracking-[0.25em] font-semibold text-[#C59B6D]">Join The Goyals Circle</span>
+          <h3 class="font-serif text-3xl sm:text-4xl font-light text-white">Receive 15% Off Your First Service</h3>
+          <p class="text-xs sm:text-sm text-white/60">Subscribe to receive private invitations, seasonal lookbooks, and botanical hair health guides.</p>
+        </div>
+        <div class="lg:col-span-6">
+          <form class="newsletter-form flex flex-col sm:flex-row gap-3">
+            <input 
+              type="email" 
+              placeholder="Enter your email address" 
+              required 
+              class="flex-grow bg-[#221D1C] border border-white/15 rounded-full px-6 py-3.5 text-xs text-white placeholder-white/40 focus:outline-none focus:border-[#C59B6D]"
+            />
+            <button type="submit" class="px-8 py-3.5 rounded-full bg-[#FAF7F2] text-[#181514] text-xs font-semibold uppercase tracking-widest hover:bg-[#C59B6D] transition-colors flex-shrink-0">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 text-left">
+        
+        <!-- Column 1: Brand & Manifesto -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="#" class="flex flex-col">
+            <span class="font-serif text-3xl tracking-[0.16em] font-light uppercase text-white">GOYALS<span class="text-[#9B3E32]">.</span></span>
+            <span class="text-[9px] uppercase tracking-[0.25em] text-white/50 -mt-1">Salon &amp; Care Lab</span>
+          </a>
+          <p class="text-xs text-white/60 leading-relaxed max-w-sm">
+            Dedicated to mindful aesthetic elegance, botanical hair restoration, and private, unhurried salon sanctuaries.
+          </p>
+          <div class="pt-2 text-xs text-white/40">
+            Inspired by the original editorial concept board.
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-[#C59B6D]">Studio Menu</h4>
+          <ul class="space-y-2 text-xs text-white/70">
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#shades" class="hover:text-white transition-colors">Color Palette</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Signature Services</a></li>
+            <li><a href="#lookbook" class="hover:text-white transition-colors">Lookbook</a></li>
+            <li><a href="#reviews" class="hover:text-white transition-colors">Client Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Care Line -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-[#C59B6D]">Care Line</h4>
+          <ul class="space-y-2 text-xs text-white/70">
+            <li><a href="#products" class="hover:text-white transition-colors">No. 01 Botanical Oil</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">No. 02 Hydra Mask</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">No. 03 Blowout Serum</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">No. 04 Scalp Tonic</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">Gift Sets</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Studios -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-[#C59B6D]">Flagships</h4>
+          <div class="space-y-3 text-xs text-white/70">
+            <div>
+              <strong class="text-white block">SoHo, New York</strong>
+              <span>482 Broome Street, New York, NY 10013</span>
+            </div>
+            <div>
+              <strong class="text-white block">Mayfair, London</strong>
+              <span>14 Mount Street, Mayfair, London W1K 2RF</span>
+            </div>
+            <div>
+              <strong class="text-white block">Le Marais, Paris</strong>
+              <span>28 Rue de Turenne, 75003 Paris</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+        <div>
+          © 2026 GOYALS SALON &amp; Care Lab. All Rights Reserved.
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="assets/images/reference_board.webp" target="_blank" class="hover:text-[#C59B6D] transition-colors underline">View Reference Board</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Slide-Out Shopping Bag Drawer -->
+  <div id="bag-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="bag-drawer" class="drawer-content w-full max-w-md bg-[#FAF7F2] flex flex-col justify-between" aria-label="Shopping Bag Drawer">
+    
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-[#E2D8CC] flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 stroke-[1.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+        <h3 class="font-serif text-xl font-medium text-[#181514]">Your Shopping Bag</h3>
+      </div>
+      <button id="bag-close" class="p-2 text-[#6B635E] hover:text-[#181514] focus:outline-none" aria-label="Close Bag">
+        ✕
+      </button>
+    </div>
+
+    <!-- Drawer Content (Items List) -->
+    <div class="p-6 flex-grow overflow-y-auto">
+      <div id="bag-empty-notice" class="hidden text-center py-16 space-y-3">
+        <div class="text-4xl text-[#E2D8CC]">🛍️</div>
+        <h4 class="font-serif text-xl text-[#181514]">Your Bag is Empty</h4>
+        <p class="text-xs text-[#6B635E]">Explore our curated care line to add botanical essentials.</p>
+        <a href="#products" class="inline-block mt-2 px-6 py-2.5 rounded-full bg-[#181514] text-white text-xs font-semibold uppercase tracking-wider">Explore Care Line</a>
+      </div>
+
+      <div id="bag-items-list" class="space-y-2">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-6 border-t border-[#E2D8CC] bg-white space-y-4">
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-[#6B635E]">Estimated Subtotal</span>
+        <span id="bag-subtotal" class="font-serif text-xl font-medium text-[#181514]">$54.00</span>
+      </div>
+      <p class="text-[11px] text-[#9B948E]">Taxes and complimentary shipping calculated at checkout.</p>
+      <button id="bag-checkout-btn" class="w-full py-4 rounded-full bg-[#181514] text-[#FAF7F2] text-xs font-semibold uppercase tracking-widest hover:bg-[#9B3E32] transition-colors shadow-md">
+        Reserve &amp; Checkout
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- Slide-Out Mobile Navigation Drawer -->
+  <div id="mobile-drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="drawer-content w-4/5 max-w-sm bg-[#FAF7F2] flex flex-col justify-between p-8" aria-label="Mobile Navigation Menu">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-[#E2D8CC]">
+        <span class="font-serif text-2xl tracking-widest font-light">GOYALS.</span>
+        <button id="mobile-drawer-close" class="p-2 text-[#6B635E] hover:text-[#181514]" aria-label="Close Mobile Menu">✕</button>
+      </div>
+
+      <nav class="flex flex-col space-y-5 mt-8 text-base font-serif text-[#181514]">
+        <a href="#about" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">About Us</a>
+        <a href="#shades" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">Shade Studio</a>
+        <a href="#services" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">Services &amp; Menu</a>
+        <a href="#products" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">Care Essentials</a>
+        <a href="#lookbook" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">Lookbook</a>
+        <a href="#reviews" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">Reviews</a>
+        <a href="#faq" class="mobile-nav-link hover:text-[#9B3E32] transition-colors">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="space-y-4 pt-6 border-t border-[#E2D8CC]">
+      <a href="#booking" class="mobile-nav-link text-center block w-full py-3.5 rounded-full bg-[#181514] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#9B3E32] transition-colors">
+        Book Appointment
+      </a>
+      <div class="text-[11px] text-[#6B635E] text-center">
+        SoHo • Mayfair • Le Marais
+      </div>
+    </div>
+  </aside>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

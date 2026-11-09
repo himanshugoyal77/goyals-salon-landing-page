@@ -1,0 +1,144 @@
+ <section id="shades" class="py-20 md:py-28 bg-[#FAF7F2] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-3 reveal">
+        <div class="text-xs uppercase tracking-[0.25em] font-semibold text-[#9B3E32]">The Color Palette</div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-[#181514]">
+          Discover Your Signature Tone
+        </h2>
+        <p class="text-sm sm:text-base text-[#6B635E] font-light">
+          Each shade is hand-blended with micro-pigments and restorative acidic glazes, calibrated to complement your complexion and eye color.
+        </p>
+
+        <!-- Interactive Shade Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 pt-4">
+          <button class="shade-tab-btn active px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-[#181514] text-white" data-shade="all">
+            All Tones
+          </button>
+          <button class="shade-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-white text-[#181514] border border-[#E2D8CC] hover:border-[#181514]" data-shade="blonde">
+            01 Blonde
+          </button>
+          <button class="shade-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-white text-[#181514] border border-[#E2D8CC] hover:border-[#181514]" data-shade="brunette">
+            02 Brunette
+          </button>
+          <button class="shade-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-white text-[#181514] border border-[#E2D8CC] hover:border-[#181514]" data-shade="copper">
+            03 Copper
+          </button>
+          <button class="shade-tab-btn px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all bg-white text-[#181514] border border-[#E2D8CC] hover:border-[#181514]" data-shade="noir">
+            04 Noir
+          </button>
+        </div>
+      </div>
+
+      <!-- 4-Column Responsive Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        
+        <!-- Shade Card 1: Blonde -->
+        <div class="shade-card-item group rounded-3xl overflow-hidden bg-white border border-[#E2D8CC] shadow-sm hover:shadow-xl transition-all duration-300" data-shade="blonde">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="assets/images/shade-blonde.jpg" alt="Sunlit Champagne Blonde" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-[#181514]">
+              01 • Sunlit Champagne
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[#181514]/80 backdrop-blur-md text-[#FAF7F2] px-2.5 py-1 rounded-full text-[10px] font-medium">
+              Cool &amp; Warm Balanced
+            </div>
+          </div>
+          <div class="p-6 space-y-3 text-left">
+            <div class="flex items-center justify-between">
+              <h3 class="font-serif text-xl font-medium text-[#181514]">Sunlit Blonde</h3>
+              <span class="text-xs text-[#9B3E32] font-semibold">Low Maintenance</span>
+            </div>
+            <p class="text-xs text-[#6B635E] leading-relaxed">
+              Hand-painted butterscotch ribbons and delicate baby-lights melted over a neutral beige root.
+            </p>
+            <div class="pt-2 border-t border-[#E2D8CC]/60 flex items-center justify-between text-xs">
+              <span class="text-[#6B635E]">Suggested Service:</span>
+              <a href="#services" class="font-semibold text-[#181514] hover:text-[#9B3E32] underline underline-offset-2">French Balayage</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shade Card 2: Brunette -->
+        <div class="shade-card-item group rounded-3xl overflow-hidden bg-white border border-[#E2D8CC] shadow-sm hover:shadow-xl transition-all duration-300" data-shade="brunette">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="assets/images/shade-brunette.jpg" alt="Glossy Moka & Caramel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-[#181514]">
+              02 • Moka &amp; Caramel
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[#181514]/80 backdrop-blur-md text-[#FAF7F2] px-2.5 py-1 rounded-full text-[10px] font-medium">
+              Ultra Gloss Finish
+            </div>
+          </div>
+          <div class="p-6 space-y-3 text-left">
+            <div class="flex items-center justify-between">
+              <h3 class="font-serif text-xl font-medium text-[#181514]">Glossy Caramel</h3>
+              <span class="text-xs text-[#9B3E32] font-semibold">Ultra Gloss</span>
+            </div>
+            <p class="text-xs text-[#6B635E] leading-relaxed">
+              Deep espresso depth infused with molten toffee ribbons that catch ambient sunlight.
+            </p>
+            <div class="pt-2 border-t border-[#E2D8CC]/60 flex items-center justify-between text-xs">
+              <span class="text-[#6B635E]">Suggested Service:</span>
+              <a href="#services" class="font-semibold text-[#181514] hover:text-[#9B3E32] underline underline-offset-2">Glaze &amp; Contour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shade Card 3: Copper -->
+        <div class="shade-card-item group rounded-3xl overflow-hidden bg-white border border-[#E2D8CC] shadow-sm hover:shadow-xl transition-all duration-300" data-shade="copper">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="assets/images/shade-copper.jpg" alt="Venetian Radiant Copper" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-[#181514]">
+              03 • Venetian Copper
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[#181514]/80 backdrop-blur-md text-[#FAF7F2] px-2.5 py-1 rounded-full text-[10px] font-medium">
+              High Vibrancy
+            </div>
+          </div>
+          <div class="p-6 space-y-3 text-left">
+            <div class="flex items-center justify-between">
+              <h3 class="font-serif text-xl font-medium text-[#181514]">Radiant Copper</h3>
+              <span class="text-xs text-[#9B3E32] font-semibold">High Pigment</span>
+            </div>
+            <p class="text-xs text-[#6B635E] leading-relaxed">
+              Rich apricot undertones woven with multidimensional cinnamon for a radiant velvet finish.
+            </p>
+            <div class="pt-2 border-t border-[#E2D8CC]/60 flex items-center justify-between text-xs">
+              <span class="text-[#6B635E]">Suggested Service:</span>
+              <a href="#services" class="font-semibold text-[#181514] hover:text-[#9B3E32] underline underline-offset-2">Chroma Infusion</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shade Card 4: Noir -->
+        <div class="shade-card-item group rounded-3xl overflow-hidden bg-white border border-[#E2D8CC] shadow-sm hover:shadow-xl transition-all duration-300" data-shade="noir">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="assets/images/shade-noir.jpg" alt="Velvet Obsidian Noir" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-[#181514]">
+              04 • Velvet Obsidian
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[#181514]/80 backdrop-blur-md text-[#FAF7F2] px-2.5 py-1 rounded-full text-[10px] font-medium">
+              Mirror Glass Reflect
+            </div>
+          </div>
+          <div class="p-6 space-y-3 text-left">
+            <div class="flex items-center justify-between">
+              <h3 class="font-serif text-xl font-medium text-[#181514]">Velvet Noir</h3>
+              <span class="text-xs text-[#9B3E32] font-semibold">Glass Reflect</span>
+            </div>
+            <p class="text-xs text-[#6B635E] leading-relaxed">
+              Intense, ink-black glass shine enriched with violet blue undertones to eliminate brassiness.
+            </p>
+            <div class="pt-2 border-t border-[#E2D8CC]/60 flex items-center justify-between text-xs">
+              <span class="text-[#6B635E]">Suggested Service:</span>
+              <a href="#services" class="font-semibold text-[#181514] hover:text-[#9B3E32] underline underline-offset-2">Lustre Gloss</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
